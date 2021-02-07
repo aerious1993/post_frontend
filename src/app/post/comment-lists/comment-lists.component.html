@@ -1,0 +1,16 @@
+
+<input class="form-control" (keyup)="filterComments($event)" placeholder="filter comment by name, email, content">
+
+<div *ngFor="let comment of filtered_comments">
+    <div class="mt-3">
+        <img src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+        data-toggle="tooltip" data-placement="top" 
+        alt="..." class="avatar">
+        <b class="ml-2">name - </b><span class="badge badge-primary">{{comment.name}}</span>
+        <b class="ml-2">email - </b><span class="badge badge-primary">{{comment.email}}</span>
+    </div>
+    <div class="border p-3 mt-3">
+        {{comment.body}}
+    </div>
+    <hr>
+</div>

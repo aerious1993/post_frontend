@@ -1,0 +1,5 @@
+This is application from https://github.com/mindworksint/interview-frontend
+
+To start the application
+1. npm install
+2. ng serve

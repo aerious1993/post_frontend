@@ -1,0 +1,17 @@
+
+
+<ng-container *ngIf="posts">
+    <div class="card mt-3  navigateUrl" (click)="navigatePostDetails(post.id)"  *ngFor="let post of posts">
+        <div class="card-body">
+           <h5 class="card-title" >{{ post.title }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+                <img src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                data-toggle="tooltip" data-placement="top" title=""
+                alt="..." class="avatar">
+                <b class="ml-2 mr-2"></b> <span class="badge badge-primary">Author id {{ post.userId }}</span>
+            </h6>
+            <p class="card-text">{{ post.body }}</p>
+            
+        </div>
+    </div>
+</ng-container>
